@@ -5,12 +5,12 @@ This is a device handler that provides an on/off button to be used to arm/disarm
 First you need to edit the alarmserver to listen for HTTP traffic instead of HTTPS. Edit the alarmserver.py and search for HTTPChannel. There should be three entries. 
 
 The second and third entries should look like this:
-#HTTPChannel(self, conn, addr)
+\#HTTPChannel(self, conn, addr)
 HTTPChannel(self, ssl.wrap_socket(conn, server_side=True, certfile=config.CERTFILE, keyfile=config.KEYFILE, ssl_version=ssl.PROTOCOL_TLSv1), addr)
 
 Change them to look like this:
 HTTPChannel(self, conn, addr)
-#HTTPChannel(self, ssl.wrap_socket(conn, server_side=True, certfile=config.CERTFILE, keyfile=config.KEYFILE, ssl_version=ssl.PROTOCOL_TLSv1), addr)
+\#HTTPChannel(self, ssl.wrap_socket(conn, server_side=True, certfile=config.CERTFILE, keyfile=config.KEYFILE, ssl_version=ssl.PROTOCOL_TLSv1), addr)
 
 Write and save the file and then restart the alarmserver service.
 
