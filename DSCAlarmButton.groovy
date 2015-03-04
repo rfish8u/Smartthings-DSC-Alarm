@@ -37,8 +37,6 @@ metadata {
 def parse(String description) {
 }
 
-
-
 def on() {
     def result = new physicalgraph.device.HubAction(
         method: "GET",
