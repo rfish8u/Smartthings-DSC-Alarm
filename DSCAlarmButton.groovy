@@ -15,7 +15,6 @@ metadata {
 	// Automatically generated. Make future change here.
 	definition (name: "DSC Alarm Button", author: "Rob Fisher <robfish@att.net>") {
 		capability "Switch"
-			
 	}
 
 	// simulator metadata
@@ -28,7 +27,6 @@ metadata {
 			state "off", label: 'Ready', action: "switch.on", icon: "st.Home.home4", backgroundColor: "#79b821"
 			state "on", label: 'Armed', action: "switch.off", icon: "st.Home.home4", backgroundColor: "#800000"
     }
-
 		main "button"
 		details(["button"])
 	}

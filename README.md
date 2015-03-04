@@ -18,7 +18,7 @@ HTTPChannel(self, conn, addr)
 
 Write and save the file and then restart the alarmserver service.
 
-Next you need to add the DSC Alarm Button device handler to your Smartthings Device Types. In the Smartthings IDE under My Device Types click on New SmartDevice. Click From Code. Paste the code from BUTTON and click Create. Click Publish For Me. 
+Next you need to add the DSC Alarm Button device handler to your Smartthings Device Types. In the Smartthings IDE under My Device Types click on New SmartDevice. Click From Code. Paste the code from DSCAlarmButton.groovy and click Create. Click Publish For Me. 
 In Smartthings IDE under My Devices click New Device. Fill in the Name and Device Network Id fields with whatever you like. Select DSC Alarm Button in the Type drop down. Select the correct Location and Hub from the drop downs. Then click Create.
 In Smartthings IDE under My Devices click the newly created device. Click edit, its next to Preferences. Enter the IP address of your alarmserver(the IP of the Raspberry Pi that is running alarmserver). The port should be 8111 unless you changed that to something else when you setup alarmserver. Click Save.
 
